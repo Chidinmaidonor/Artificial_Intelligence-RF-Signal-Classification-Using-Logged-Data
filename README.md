@@ -1,38 +1,23 @@
-<h1>Arduino Lab Projects – Bluetooth Serial Communication</h1>
-
-### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
+<h1>RF Signal Classification using Logged Data</h1>
 
 <h2>Description</h2>
-This summer lab project showcases a **Bluetooth-based serial communication system** using Arduino. The goal was to enable seamless wireless data transmission between an Arduino microcontroller and a mobile device or PC via Bluetooth (HC-05 module). The system was **first simulated using Proteus** to verify serial communication flow, baud rate settings, and response triggers before implementing it with actual hardware.
-
+This project focuses on the classification of Radio Frequency (RF) signals using logged data collected from wireless communication environments. The objective is to develop a machine learning pipeline that can automatically detect and classify signal types or modulation schemes based on physical and environmental parameters logged during RF transmissions.
 <br />
 
-The project demonstrates how embedded systems can wirelessly transmit sensor data or respond to control commands using serial data over Bluetooth, making it applicable for IoT and remote monitoring scenarios.
 
-<h2>Hardware Components Used</h2>
+<h2>Data Collection and Preprocessing</h2>
 
-- <b>Arduino UNO</b>  
-- <b>Bluetooth Module HC-05</b>  
-- <b>LEDs & Resistors</b>  
-- <b>Breadboard & Jumper Wires</b>
+- <b>Uses logged RF parameters such as frequency, signal strength (RSSI), SNR, modulation type, time, temperature, humidity, and wind speed.</b>  
+- <b>Cleans and standardizes raw data to prepare it for model training.</b>  
 
-<h2>Software Tools</h2>
+<h2>Machine Learning Pipeline</h2>
 
-- <b>Arduino IDE</b>  
-- <b>Proteus (Simulation)</b>  
-- <b>Serial Bluetooth Terminal (Android App)</b>
+- <b>Applies classification algorithms (Random Forest) to learn patterns in the RF data.</b>  
+- <b>Evaluates performance using metrics like accuracy, F1-score, and confusion matrix.</b>  
 
 <h2>Program Walk-Through:</h2>
 
 <p align="center">
-Proteus Simulation Setup: <br/>
-<img src="https://imgur.com/a/7C1h45b" height="80%" width="80%" alt="Bluetooth Simulation"/>
-<br /><br />
-
-Sending Commands from Mobile App: <br/>
-<img src="https://i.imgur.com/YourMobileAppImageHere.png" height="80%" width="80%" alt="Bluetooth App"/>
-<br /><br />
-
-Receiving and Executing Serial Data: <br/>
-<img src="https://i.imgur.com/YourArduinoRunImageHere.png" height="80%" width="80%" alt="Arduino Execution"/>
+Link to Kaggle : https://www.kaggle.com/datasets/chidinmaidonor/rf-signal-classification-using-logged-data <br/>
+- The Kaggle link showcases the dataset used and a brief description of the moel performance.
 </p>
